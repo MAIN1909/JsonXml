@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<company name="Microsoft">
+    <director>Bill</director>
+    <departments>
+        <department id="1" name="Logistics">
+            <manager>John</manager>
+            <employees>
+                <employee id="1">Pedro</employee>
+                <employee id="2">Manuel</employee>
+            </employees>
+        </department>
+        <department id="2" name="Development">
+            <manager>Bob</manager>
+            <employees>
+                <employee id="1">Alex</employee>
+                <employee id="2">Petr</employee>
+            </employees>
+        </department>
+    </departments>
+</company>
