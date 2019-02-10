@@ -7,19 +7,20 @@ import java.util.List;
 @XmlRootElement
 public class Company {
     @XmlElement
-    public String director;
+    String director;
     @XmlAttribute
-    public String name;
+    String name;
     @XmlElement(name = "department")
     @XmlElementWrapper(name = "departments")
-    public List<Department> departments;
+    List<Department> departments;
+
 
     @Override
     public String toString() {
         return "Company{" +
                 "director='" + director + '\'' +
                 ", name='" + name + '\'' +
-                ", departments=" + departments +
-                '}';
+                ", departments:" + departments
+                ;
     }
 }

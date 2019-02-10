@@ -5,15 +5,15 @@ import javax.xml.bind.annotation.XmlValue;
 @XmlRootElement
 public class Employee {
     @XmlAttribute
-    public int id;
+    int id;
     @XmlValue
-    public String name;
+    String name;
 
     @Override
     public String toString() {
         return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+                "id = " + id +
+                ", name = '" + name + '\'' +
                 '}';
     }
 }

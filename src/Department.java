@@ -7,22 +7,22 @@ import java.util.List;
 @XmlRootElement
 public class Department {
     @XmlAttribute
-    public int id;
+    int id;
     @XmlElement
-    public String manager;
+    String manager;
     @XmlAttribute
-    public String name;
+    String name;
     @XmlElement(name = "employee")
     @XmlElementWrapper(name = "employees")
-    public List<Employee> employees;
+    List<Employee> employees;
+
 
     @Override
     public String toString() {
-        return "Department{" +
+        return "Department  " +
                 "id=" + id +
-                ", manager='" + manager + '\'' +
-                ", name='" + name + '\'' +
-                ", employees=" + employees +
-                '}';
+                ", name='" + name + "'" +
+                ", manager='" + manager + "'" +
+                ", employees:" + employees;
     }
 }
